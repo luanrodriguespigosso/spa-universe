@@ -15,6 +15,7 @@ a {
 
 :root {
   --ff__default: "Roboto", sans-serif;
+  --text: hsl (0, 0, 0);
   font-size: 62.5%;
 }
 
@@ -22,9 +23,7 @@ body {
   font-family: var(--ff__default);
   font-weight: 400;
   font-size: 1.6rem;
-}
-
-#bg__home {
+  color: var(--text);
   background-image: url("/assets/img/mountains-universe-1.png");
   background-size: cover;
   background-repeat: no-repeat;
