@@ -18,13 +18,11 @@ a {
   --ff__default: "Roboto", sans-serif;
   font-size: 62.5%;
   --hue: 194;
-  --text: hsl (var(--hue), 0, 0);
-  --text-hover: hsla(var(--hue), 97%, 31%, 1);
+  --text: hsl(var(--hue), 255%, 255%);
+  --text-hover: hsl(var(--hue), 97%, 31%);
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   font-family: var(--ff__default);
   font-weight: 400;
   font-size: 1.6rem;
@@ -61,7 +59,7 @@ li a {
 }
 
 .container {
-  width: 112rem;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -104,4 +102,19 @@ button:hover {
 
 button a:hover {
   color: var(--text-hover);
+}
+
+.universe_content {
+  width: 64.8rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 0 10.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding-top: 1.6rem;
 }
