@@ -28,14 +28,23 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   color: var(--text);
+  width: 100vw;
   height: 100vh;
-  background-image: url("/assets/img/mountains-universe-1.png");
+  background-image: url(/assets/img/mountains-universe-1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-header {
+.bg__universe {
+  background-image: url(/assets/img/mountains-universe02.png);
+}
+
+.bg__exploration {
+  background-image: url(/assets/img/mountains-universe-3.png);
+}
+
+nav {
   height: 12.2rem;
   display: flex;
   align-content: center;
@@ -44,7 +53,7 @@ header {
   margin: 0 7.2rem;
 }
 
-header img {
+nav img {
   width: 4.9rem;
   height: 4.2rem;
 }
@@ -68,6 +77,10 @@ nav a:hover {
 .container {
   width: 100%;
   height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -104,11 +117,13 @@ button a {
   color: hsl(var(--hue), 255%, 255%);
 }
 
-button:hover {
+/* button:hover {
   background: white;
-}
+} */
 
+button:hover,
 button a:hover {
+  background: var(--text);
   color: var(--text-hover);
 }
 
@@ -125,14 +140,6 @@ p {
   font-size: 1.8rem;
   line-height: 3rem;
   padding-top: 1.6rem;
-}
-
-body.universe {
-  background-image: url("/assets/img/mountains-universe02.png");
-}
-
-body.exploration {
-  background-image: url("/assets/img/mountains-universe-3.png");
 }
 
 nav a:active {
